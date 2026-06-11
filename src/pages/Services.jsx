@@ -10,7 +10,7 @@ import {
     FaCommentDots,
     FaLightbulb
 } from 'react-icons/fa';
-import { CeativeDirector, group, StrategicManager } from '../assets/images';
+import { CeativeDirector, group, HR, StrategicManager } from '../assets/images';
 
 const Services = () => {
     const services = [
@@ -63,7 +63,7 @@ const Services = () => {
             description: "TKGN Studios is our in-house production team that creates visual content for brands that want to show up with clarity, professionalism, and relevance. We shoot in Abuja and Lagos, delivering digital-first visuals that fuel social media campaigns and product launches.",
             icon: FaVideo,
             bgColor: "from-[#0c6478] to-[#0BD0C7]",
-            image: "https://i.pinimg.com/736x/8e/7e/4e/8e7e4e0e9b5c2e0e9e0e9e0e9e0e9e0e.jpg",
+            image: HR,
             offerings: [
                 "Beats and Shortform Video Production",
                 "Lifestyle and Product Photography",
@@ -84,7 +84,7 @@ const Services = () => {
             description: "The Akademy is our learning hub for digital creatives, brand managers, and entrepreneurs. Whether you're managing your own platforms or growing your creative career, our on-demand courses give you the skills and confidence to succeed.",
             icon: FaGraduationCap,
             bgColor: "from-[#0BD0C7] to-[#0c6478]",
-            image: "https://i.pinimg.com/736x/0d/3e/4f/0d3e4f0e9b5c2e0e9e0e9e0e9e0e9e0e.jpg",
+            image: group,
             offerings: [
                 "Social Media Management",
                 "Content Creation and Strategy",
@@ -135,7 +135,7 @@ const Services = () => {
                             Our <span className="text-[#0BD0C7]">Services</span>
                         </h1>
                         <p className="text-lg md:text-xl max-w-3xl mx-auto">
-                            Creative Solutions. Strategic Execution.
+                            Expertise Designed for Hospitality Excellence.
                         </p>
                     </div>
                 </div>
@@ -149,21 +149,11 @@ const Services = () => {
                             Full-Service Creative Company
                         </h2>
                         <p className="text-gray-600 mb-6">
-                            We are a full-service creative company offering brand strategy, social media management,
-                            digital marketing, and visual production for brands that want to grow with excellence.
+                            Whether you're refining your brand, elevating guest experiences, strengthening operations, or preparing for your next stage of growth, Gleam provides the strategic expertise and creative capabilities to help you move forward with confidence.
                         </p>
                         <p className="text-gray-600 mb-8">
-                            At The KJGold Network, we bring tailored packages, deep insights, and purposeful storytelling
-                            to simplify the digital experience for our clients. Whether you need strategic planning or
-                            creative development, The KJGold Network is your trusted partner for digital growth.
+                            Our services are thoughtfully designed to solve real challenges, uncover new opportunities, and help hospitality businesses create meaningful experiences that leave a lasting mark
                         </p>
-                        <Link
-                            to="/discovery-call"
-                            className="inline-flex items-center space-x-2 bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg"
-                        >
-                            <span>Book a Discovery Call</span>
-                            <FaArrowRight />
-                        </Link>
                     </div>
                 </div>
             </section>

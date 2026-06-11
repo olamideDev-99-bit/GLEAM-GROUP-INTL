@@ -27,8 +27,8 @@ const Footer = () => {
                         <div className="space-y-3">
                             <div className="flex items-center space-x-3 group">
                                 <FaPhone className="text-[#0BD0C7] group-hover:scale-110 transition-transform" />
-                                <a href="tel:+2348076877986" className="hover:text-[#0BD0C7] transition-colors">
-                                    +234-807-6877-986
+                                <a href="tel:+2347056619999" className="hover:text-[#0BD0C7] transition-colors">
+                                    07056619999
                                 </a>
                             </div>
                             <div className="space-y-1">
@@ -36,8 +36,8 @@ const Footer = () => {
                                     <FaEnvelope className="text-[#0BD0C7] mt-1 group-hover:scale-110 transition-transform" />
                                     <div>
                                         <p className="text-sm text-white/80">Inquiries:</p>
-                                        <a href="mailto:info@thekiagoldnetwork.com" className="hover:text-[#0BD0C7] transition-colors break-all">
-                                            info@thekiagoldnetwork.com
+                                        <a href="mailto:Info@gleamgroupint.com" className="hover:text-[#0BD0C7] transition-colors break-all">
+                                           Info@gleamgroupint.com
                                         </a>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@ const Footer = () => {
 
                         {/* Social Icons */}
                         <div className="flex justify-center space-x-4 mt-6">
-                            <a
+                            {/* <a
                                 href="https://linkedin.com/company/yourcompany"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -118,9 +118,9 @@ const Footer = () => {
                                 aria-label="LinkedIn"
                             >
                                 <FaLinkedin className="w-5 h-5" />
-                            </a>
+                            </a> */}
                             <a
-                                href="https://twitter.com/yourusername"
+                                href="https://x.com/Gleamgroupint"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white/10 p-2 rounded-full hover:bg-[#0BD0C7] transition-all duration-300 hover:scale-110"
@@ -129,7 +129,7 @@ const Footer = () => {
                                 <FaTwitter className="w-5 h-5" />
                             </a>
                             <a
-                                href="https://instagram.com/yourusername"
+                                href="https://www.instagram.com/gleam_groupint?igsh=OG5oY2FmNTRnMnhx&utm_source=qr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-white/10 p-2 rounded-full hover:bg-[#0BD0C7] transition-all duration-300 hover:scale-110"
@@ -143,7 +143,7 @@ const Footer = () => {
 
                 {/* Copyright Section */}
                 <div className="border-t border-white/20 mt-10 pt-6 text-center text-sm text-white/60">
-                    <p>&copy; {new Date().getFullYear()} The Kagold Network. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Gleam Group International. All rights reserved.</p>
                 </div>
             </div>
         </footer>

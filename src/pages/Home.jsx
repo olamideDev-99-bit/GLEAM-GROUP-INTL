@@ -45,7 +45,7 @@ const Home = () => {
             price: "₦50,000",
             buttonText: "Request to Book",
             link: "/book/mentorship",
-            image: "/images/service-mentorship.jpg"
+            image: "https://i.pinimg.com/1200x/87/7a/2f/877a2f42ff08e2536d7c29c71036db85.jpg"
         },
         {
             title: "Brand Growth & Development",
@@ -53,7 +53,7 @@ const Home = () => {
             price: "₦40,000",
             buttonText: "Request to Book",
             link: "/book/brand-consultation",
-            image: "/images/service-brand-growth.jpg"
+            image: "https://i.pinimg.com/736x/7e/6f/e3/7e6fe3488b60391e6c9f8b3d7ba382f9.jpg"
         },
         {
             title: "Social/Digital Strategy",
@@ -61,7 +61,7 @@ const Home = () => {
             price: "₦20,000",
             buttonText: "Request to Book",
             link: "/book/strategy",
-            image: "/images/service-strategy.jpg"
+            image: "https://i.pinimg.com/1200x/df/81/ff/df81ff756d7b232bf5e54a82e9fb3243.jpg"
         },
         {
             title: "Marketing & Performance",
@@ -69,7 +69,7 @@ const Home = () => {
             price: "₦40,000",
             buttonText: "Request to Book",
             link: "/book/marketing",
-            image: "/images/service-marketing.jpg"
+            image: "https://i.pinimg.com/736x/fd/51/50/fd515007f2f92de868516ea503897c91.jpg"
         },
         {
             title: "Personalized Training Workshop",
@@ -77,7 +77,7 @@ const Home = () => {
             price: "₦250,000",
             buttonText: "Request to Book",
             link: "/book/training",
-            image: "/images/service-training.jpg"
+            image: "https://i.pinimg.com/736x/9d/e4/1d/9de41d6e269715f2d8355c7e192bf744.jpg"
         }
     ];
 
@@ -125,7 +125,7 @@ const Home = () => {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
                             <img
-                                src="https://i.pinimg.com/736x/ac/c5/7d/acc57d1a6ad3fa2dc815308e26194190.jpg"
+                                src="https://i.pinimg.com/1200x/b0/27/c8/b027c8733b8f76a71be88d7ff7189bea.jpg"
                                 alt="About GLEAM GROUP"
                                 className="rounded-2xl shadow-xl w-full"
                             />
@@ -189,7 +189,7 @@ const Home = () => {
                         </div>
                         <div>
                             <img
-                                src="https://i.pinimg.com/736x/ac/c5/7d/acc57d1a6ad3fa2dc815308e26194190.jpg"
+                                src="https://i.pinimg.com/1200x/fd/eb/05/fdeb05d593ba1a0d490a3b2a950204a8.jpg"
                                 alt="Creative Network Team"
                                 className="rounded-2xl shadow-xl w-full"
                             />
@@ -221,7 +221,7 @@ const Home = () => {
                         </div>
                         <div>
                             <img
-                                src="https://i.pinimg.com/736x/ac/c5/7d/acc57d1a6ad3fa2dc815308e26194190.jpg"
+                                src="https://i.pinimg.com/1200x/b0/20/b1/b020b149caf10d5dc8d67b77bc931d7a.jpg"
                                 alt="Our Services"
                                 className="rounded-2xl shadow-xl w-full h-full object-cover"
                             />
@@ -252,7 +252,7 @@ const Home = () => {
                         </div>
                         <div>
                             <img
-                                src="https://i.pinimg.com/736x/ac/c5/7d/acc57d1a6ad3fa2dc815308e26194190.jpg"
+                                src="https://i.pinimg.com/1200x/c5/93/99/c59399c94e777710163f3ed0695d858d.jpg"
                                 alt="The Akademy Learning"
                                 className="rounded-2xl shadow-2xl w-full"
                             />
@@ -261,46 +261,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Client Results Section */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
-                        Client Results
-                    </h2>
-                    <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-                        We have worked with startups and industry leaders across fashion, beauty, finance,
-                        lifestyle, and nonprofit sectors. From strategy to execution, our focus remains the
-                        same — clarity, growth, and creative leadership.
-                    </p>
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="grid grid-cols-2 gap-6">
-                            {clients.map((client, index) => (
-                                <div key={index} className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-shadow">
-                                    {client.logo ? (
-                                        <img
-                                            src={client.logo}
-                                            alt={client.name}
-                                            className="h-16 mx-auto mb-4 object-contain"
-                                        />
-                                    ) : (
-                                        <div className="h-16 mx-auto mb-4 flex items-center justify-center">
-                                            <client.icon className="text-[#0BD0C7] text-5xl" />
-                                        </div>
-                                    )}
-                                    <h3 className="text-xl font-bold text-[#0c6478]">{client.name}</h3>
-                                </div>
-                            ))}
-                        </div>
-                        <div>
-                            <img
-                                src="/images/client-results.jpg"
-                                alt="Client Success Stories"
-                                className="rounded-2xl shadow-xl w-full"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
+  
 
             {/* Services/Pricing Section */}
             <section className="py-20 bg-white">
@@ -371,7 +332,7 @@ const Home = () => {
                         </div>
                         <div>
                             <img
-                                src="/images/work-with-us.jpg"
+                                src="https://i.pinimg.com/1200x/ac/cd/cf/accdcf02196d6f80bc18412885981619.jpg"
                                 alt="Work With Us"
                                 className="rounded-2xl shadow-2xl w-full"
                             />

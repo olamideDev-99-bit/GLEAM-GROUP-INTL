@@ -135,7 +135,7 @@ const About = () => {
                         </div>
                         <div>
                             <img
-                                src="https://i.pinimg.com/736x/ac/c5/7d/acc57d1a6ad3fa2dc815308e26194190.jpg"
+                                src={group}
                                 alt="Our Story"
                                 className="rounded-2xl shadow-xl w-full"
                             />
