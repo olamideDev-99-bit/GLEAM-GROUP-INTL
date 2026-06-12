@@ -54,9 +54,6 @@ const Header = () => {
                                 <div className="flex flex-col justify-center items-center">
                                     <img src="GLEAM-Logo.png" alt="GLEAM GROUP" className="md:w-10 w-8 md:h-10 h-8 object-cover mb-2" />
                                     <span className="text-xs text-gray-500 -mt-1">GLEAM GROUP</span>
-                                    <span className="text-[10px] text-gray-400 italic">
-                                        ...Creativity and Growth
-                                    </span>
                                 </div>
                             </div>
                         </div>

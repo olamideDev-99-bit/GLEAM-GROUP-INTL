@@ -45,8 +45,8 @@ const Footer = () => {
                             <div className="flex items-start space-x-3 group">
                                 <FaMapMarkerAlt className="text-[#0BD0C7] mt-1 group-hover:scale-110 transition-transform" />
                                 <p className="text-sm leading-relaxed">
-                                    near Asokoro, Guzape, Kusafe 900110, <br />
-                                    Federal Capital Territory
+                                    5 Idowu martins street<br />
+                                    vi Lagos. Nigeria
                                 </p>
                             </div>
                         </div>

@@ -123,7 +123,7 @@ const Services = () => {
         <div className="pt-20">
             {/* Hero Section */}
             <section
-                className="relative text-white py-20 bg-cover bg-center bg-no-repeat h-[80vh] flex items-center"
+                className="relative text-white py-12 md:py-20 bg-cover bg-center bg-no-repeat min-h-[60vh] md:min-h-[80vh] flex items-center"
                 style={{
                     backgroundImage: `url(${group})`,
                 }}
@@ -142,7 +142,7 @@ const Services = () => {
             </section>
 
             {/* Introduction Section */}
-            <section className="py-20 bg-white">
+            <section className="py-12 md:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
@@ -160,9 +160,9 @@ const Services = () => {
 
             {/* Services Sections */}
             {services.map((service, index) => (
-                <section key={service.id} className={`py-20 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
+                <section key={service.id} className={`py-12 md:py-20 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid lg:grid-cols-2 gap-12 items-start">
+                        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
                             <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                                 <div className={`inline-flex items-center space-x-2 bg-gradient-to-r ${service.bgColor} text-white px-4 py-2 rounded-full mb-6`}>
                                     <service.icon className="w-5 h-5" />
@@ -198,7 +198,7 @@ const Services = () => {
                                     <img
                                         src={service.image}
                                         alt={service.title}
-                                        className="rounded-xl shadow-2xl w-full h-[500px] object-cover"
+                                        className="rounded-xl shadow-2xl w-full h-64 sm:h-80 lg:h-[500px] object-cover"
                                     />
                                 </div>
                             </div>
@@ -208,7 +208,7 @@ const Services = () => {
             ))}
 
             {/* Consultation Calls Section */}
-            <section className="py-20 bg-[#0c6478] text-white">
+            <section className="py-12 md:py-20 bg-[#0c6478] text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">Consultation Calls</h2>
@@ -218,7 +218,7 @@ const Services = () => {
                         </p>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
                         <div>
                             <p className="text-lg mb-6">
                                 Sometimes, you don't need a full creative team — you just need to speak to someone who
@@ -261,7 +261,7 @@ const Services = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-white">
+            <section className="py-12 md:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
                         Ready to Start Your Journey?

@@ -37,7 +37,7 @@ const Home = () => {
             priceLabel: "Free",
             buttonText: "Book Now",
             link: "/book/discovery-call",
-            image: "https://i.pinimg.com/736x/ac/c5/7d/acc57d1a6ad3fa2dc815308e26194190.jpg"
+            image: "https://i.pinimg.com/736x/0d/d8/67/0dd8679d83fbfa635ec96b9d019ed95d.jpg"
         },
         {
             title: "1-on-1 SMM Mentorship",
@@ -93,7 +93,7 @@ const Home = () => {
         <div className="pt-20">
             {/* Hero Section */}
             <section
-                className="relative text-white py-20 bg-cover bg-center bg-no-repeat h-[80vh] flex items-center"
+                className="relative text-white py-12 md:py-20 bg-cover bg-center bg-no-repeat min-h-[60vh] md:min-h-[80vh] flex items-center"
                 style={{
                     backgroundImage: `url(${group})`,
                 }}
@@ -120,9 +120,9 @@ const Home = () => {
             </section>
 
             {/* About Section */}
-            <section className="py-20 bg-white">
+            <section className="py-12 md:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                         <div>
                             <img
                                 src="https://i.pinimg.com/1200x/b0/27/c8/b027c8733b8f76a71be88d7ff7189bea.jpg"
@@ -166,9 +166,9 @@ const Home = () => {
             </section>
 
             {/* Our Creative Network Section */}
-            <section className="py-20 bg-gray-50">
+            <section className="py-12 md:py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
                                 Our Creative Network
@@ -199,7 +199,7 @@ const Home = () => {
             </section>
 
             {/* What We Offer Section */}
-            <section className="py-20 bg-white">
+            <section className="py-12 md:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
                         Excellence Across Every Touchpoint
@@ -207,7 +207,7 @@ const Home = () => {
                     <p className=' text-center text-gray-600 mb-12 '>
                         The most memorable hospitality brands are built through hundreds of intentional moments. At Gleam, we combine strategy, creativity, operational intelligence, and professional development to help brands deliver exceptional experiences, inspire loyalty, and achieve sustainable growth.
                     </p>
-                    <div className="grid md:grid-cols-2 gap-12">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {offerings.map((item, index) => (
                                 <div key={index} className="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
@@ -223,7 +223,7 @@ const Home = () => {
                             <img
                                 src="https://i.pinimg.com/1200x/b0/20/b1/b020b149caf10d5dc8d67b77bc931d7a.jpg"
                                 alt="Our Services"
-                                className="rounded-2xl shadow-xl w-full h-full object-cover"
+                                className="rounded-2xl shadow-xl w-full h-64 md:h-full object-cover"
                             />
                         </div>
                     </div>
@@ -231,9 +231,9 @@ const Home = () => {
             </section>
 
             {/* The Akademy Section */}
-            <section className="py-20 bg-[#0c6478] text-white">
+            <section className="py-12 md:py-20 bg-[#0c6478] text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Built for Those Who Intend to Lead</h2>
                             <p className="text-xl mb-6">
@@ -264,7 +264,7 @@ const Home = () => {
   
 
             {/* Services/Pricing Section */}
-            <section className="py-20 bg-white">
+            <section className="py-12 md:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
@@ -302,9 +302,9 @@ const Home = () => {
             </section>
 
             {/* Work With Us Section */}
-            <section className="py-20 bg-linear-to-r from-[#0c6478] to-[#0BD0C7] text-white">
+            <section className="py-12 md:py-20 bg-linear-to-r from-[#0c6478] to-[#0BD0C7] text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Build Something Remarkable</h2>
                             <div className="w-24 h-1 bg-white mb-8"></div>
@@ -342,7 +342,7 @@ const Home = () => {
             </section>
 
             {/* Final CTA Section */}
-            <section className="py-20 bg-white">
+            <section className="py-12 md:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
                         The Future of Your Brand Starts Here

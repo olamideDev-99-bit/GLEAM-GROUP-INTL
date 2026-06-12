@@ -1,63 +1,68 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight, FaUsers, FaLightbulb, FaChartLine, FaRocket, FaLinkedin, FaTwitter, FaEnvelope, FaGem } from 'react-icons/fa';
 import { AssistantTL, CeativeDirector, group, HR, ProjectManager, StrategicManager, TL } from '../assets/images';
 
 const About = () => {
+    const [selectedMember, setSelectedMember] = useState(null);
+
+    const truncateText = (text, wordLimit = 30) => {
+        const words = text.split(' ');
+        if (words.length > wordLimit) {
+            return words.slice(0, wordLimit).join(' ') + '...';
+        }
+        return text;
+    };
+
     const teamMembers = [
         {
-            name: "Adora John-Bro",
+            name: "OLAMIDE ADEJARE",
+            position: "Ceative director",
+            description: `OLAMIDE leads the creative vision and brand expression for Gleam Group Intl, shaping how hospitality brands look, feel, and connect with their audiences. He specializes in translating business strategy into compelling visual narratives, immersive brand systems, and design languages that resonate with guests and drive commercial value. His creative philosophy centers on clarity, emotion, and distinction. By aligning design with purpose, he ensures every touchpoint, from digital presence to physical space, communicates a brand’s story with intention and leaves a lasting impression. At Gleam, OLAMIDE bridges aesthetics and strategy, turning abstract ideas into tangible brand assets that elevate perception and performance. He works closely with clients to craft identities that are not only beautiful, but functional, scalable, and rooted in the realities of hospitality operations. For him, great design in hospitality is more than decoration. It is direction, differentiation, and the silent language that makes guests feel something before a word is spoken.`,
+            image: CeativeDirector,
+            linkedin: "#",
+            email: "Info@olamideofficial.com"
+        },
+        {
+            name: "ISIEKWENE SANDRA NKEM ",
+            position: "Team Lead manager",
+            description: `Leads hospitality teams within GLEAM-GROUP, ensuring service excellence is clearly defined and consistently delivered across every guest interaction. She operates at the intersection of people and performance guiding teams with clarity, discipline, and alignment to translate hospitality standards into seamless, intentional guest experiences. Within GLEAM, she contributes to strengthening service culture across client establishments, improving operational flow, and ensuring teams are structured for consistency and excellence in delivery. Her approach is driven by a genuine love for hospitality the energy of service, the precision of execution, and the fulfillment of a well crafted guest experience. For her, leading teams is not only responsibility but a meaningful expression of structure, people, and shared excellence. As part of GLEAM’s collective of hospitality specialists, she helps bridge strategy and execution, turning ideas into measurable impact across hospitality brands. For her, hospitality is not just service it is experience, designed and delivered with intention.`,
+            image: TL,
+            linkedin: "#",
+            email: "Sandnkemtessy@gmail.com"
+        },
+        {
+            name: "Tobechukwu Uroh",
+            position: "Strategic manager",
+            description: `Tobechukwu Uroh is responsible for shaping the strategic direction and growth initiatives of Gleam. Passionate about the future of hospitality, he specializes in identifying opportunities, building scalable systems, and developing frameworks that enable brands to thrive in an increasingly competitive landscape. His leadership philosophy is rooted in intentionality, innovation, and excellence. By bridging creative vision with operational discipline, he helps transform ambitious ideas into meaningful outcomes that drive both business performance and exceptional guest experiences. Through Gleam, Tobechukwu is committed to helping hospitality brands build with clarity, lead with purpose, and leave a lasting mark on the people they serve.`,
+            image: StrategicManager,
+            linkedin: "#",
+            email: "atillasemail76@gmail.com"
+        },
+        {
+            name: "Oladimeji Adams",
+            position: "Project manager",
+            description: `Bridging Creativity and Strategy: My Journey as a Project Manager & Graphic Designer In today's fast-paced digital world, successful brands require more than beautiful visuals—they need strategic execution, effective leadership, and purposeful communication. My journey as both a Project Manager and Graphic Designer has allowed me to combine creativity with structure, ensuring that every project is delivered with excellence from concept to completion. As a graphic designer, I believe design is more than aesthetics; it is a powerful business tool that influences perception, builds trust, and drives engagement. Every visual element should communicate a clear message while creating memorable experiences for audiences. At the same time, my experience in project management has strengthened my ability to coordinate teams, manage timelines, optimize resources, and deliver projects that meet business objectives without compromising quality. I enjoy transforming ideas into actionable plans and ensuring that collaboration remains at the heart of every successful outcome.`,
+            image: ProjectManager,
+            linkedin: "#",
+            email: "oladimejiadams9066@gmail.com"
+        },
+        {
+            name: "Franca Imene Oghenevwaire",
             position: "HR",
-            description: "Adora is the visionary behind GLEAM GROUP. With a bold mix of creativity, spiritual clarity, and strategy, she leads the team in shaping exceptional brand experiences.",
+            description: `Franca Imene Oghenevwaire is an HR professional with expertise in human resources, administration, internal control, and customer relations. She holds a bachelor's degree in library and information science and a master's degree in business administration. As HR Manager at GLEAM GROUP, she is dedicated to building strong workplace cultures, supporting team development, and implementing people-focused strategies that contribute to organizational success. Her passion for growth, collaboration, and continuous improvement drives her commitment to helping individuals and businesses reach their full potential.`,
             image: HR,
             linkedin: "#",
             twitter: "#",
-            email: "#"
+            email: "Francaimene@gmail.com"
         },
         {
-            name: "Joy Erhuwu John",
-            position: "Project manager",
-            description: "Joy ensures structure and alignment across teams and timelines. With a calm and strategic presence, she oversees operations across our client projects, internal systems, and cross-city teams.",
-            image: ProjectManager,
-            linkedin: "#",
-            twitter: "#",
-            email: "#"
-        },
-        {
-            name: "Hadasa Arinze",
-            position: "Team Lead manager",
-            description: "Hadasa leads the creative content process across client accounts with a deep understanding of digital communication. She guides teams to produce content that is both strategic and story-driven.",
-            image: TL,
-            linkedin: "#",
-            twitter: "#",
-            email: "#"
-        },
-        {
-            name: "Grace Yika Maikano",
-            position: "Ceative director",
-            description: "Grace supports the structure and growth of our team by managing recruitment, onboarding, and HR systems across the network. She ensures every team member feels equipped and informed.",
-            image: CeativeDirector,
-            linkedin: "#",
-            twitter: "#",
-            email: "#"
-        },
-        {
-            name: "Grace Yika Maikano",
-            position: "Strategic manager",
-            description: "Grace supports the structure and growth of our team by managing recruitment, onboarding, and HR systems across the network. She ensures every team member feels equipped and informed.",
-            image: StrategicManager,
-            linkedin: "#",
-            twitter: "#",
-            email: "#"
-        },
-
-        {
-            name: "Grace Yika Maikano",
+            name: "Rachael Osikoya",
             position: "Assistant Team Lead Manager",
-            description: "Grace supports the structure and growth of our team by managing recruitment, onboarding, and HR systems across the network. She ensures every team member feels equipped and informed.",
+            description: `Rachael Osikoya is a dynamic Hospitality and Administrative Professional specializing in executive support, stakeholder management, and team development. As an Assistant Team Leader, she drives operational efficiency by coordinating priorities, supporting leadership, and developing high-performing teams. Recognized for her professionalism, strategic thinking, and commitment to service excellence, she consistently delivers exceptional value to clients, stakeholders, and organizations.`,
             image: AssistantTL,
             linkedin: "#",
-            twitter: "#",
-            email: "#"
+            email: "rachaelosikoya@gmail.com"
         },
     ];
 
@@ -201,7 +206,15 @@ const About = () => {
                                     <h3 className="text-xl font-bold text-[#0c6478] mb-1">{member.name}</h3>
                                     <p className="text-[#0BD0C7] font-semibold text-sm mb-3">{member.position}</p>
                                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                                        {member.description}
+                                        {truncateText(member.description, 40)}
+                                        {member.description.split(' ').length > 40 && (
+                                            <button 
+                                                onClick={() => setSelectedMember(member)}
+                                                className="text-[#0BD0C7] hover:text-[#0c6478] font-semibold ml-1 inline focus:outline-none"
+                                            >
+                                                Read more
+                                            </button>
+                                        )}
                                     </p>
                                     <div className="flex space-x-3 pt-2 border-t border-gray-100">
                                         <a
@@ -211,14 +224,6 @@ const About = () => {
                                             className="text-gray-400 hover:text-[#0BD0C7] transition-colors duration-300"
                                         >
                                             <FaLinkedin className="w-5 h-5" />
-                                        </a>
-                                        <a
-                                            href={member.twitter}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-gray-400 hover:text-[#0BD0C7] transition-colors duration-300"
-                                        >
-                                            <FaTwitter className="w-5 h-5" />
                                         </a>
                                         <a
                                             href={member.email}
@@ -270,6 +275,52 @@ const About = () => {
                     </Link>
                 </div>
             </section>
+
+            {/* Team Member Modal */}
+            {selectedMember && (
+                <div 
+                    className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+                    onClick={() => setSelectedMember(null)}
+                >
+                    <div 
+                        className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 relative shadow-2xl" 
+                        onClick={e => e.stopPropagation()}
+                    >
+                        <button 
+                            onClick={() => setSelectedMember(null)}
+                            className="absolute top-4 right-4 text-gray-400 hover:text-gray-800 transition-colors bg-gray-100 hover:bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center focus:outline-none"
+                            aria-label="Close modal"
+                        >
+                            ✕
+                        </button>
+                        <div className="flex flex-col md:flex-row gap-6 items-start mt-2">
+                            <img 
+                                src={selectedMember.image} 
+                                alt={selectedMember.name} 
+                                className="w-full md:w-48 h-64 md:h-48 rounded-xl object-cover shadow-md" 
+                            />
+                            <div className="flex-1">
+                                <h3 className="text-2xl font-bold text-[#0c6478] mb-1">{selectedMember.name}</h3>
+                                <p className="text-[#0BD0C7] font-semibold mb-4">{selectedMember.position}</p>
+                                <p className="text-gray-700 leading-relaxed text-sm md:text-base">
+                                    {selectedMember.description}
+                                </p>
+                                <div className="flex space-x-4 pt-4 mt-4 border-t border-gray-100">
+                                    <a href={selectedMember.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0BD0C7] transition-colors">
+                                        <FaLinkedin className="w-6 h-6" />
+                                    </a>
+                                    <a href={selectedMember.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0BD0C7] transition-colors">
+                                        <FaTwitter className="w-6 h-6" />
+                                    </a>
+                                    <a href={selectedMember.email} className="text-gray-400 hover:text-[#0BD0C7] transition-colors">
+                                        <FaEnvelope className="w-6 h-6" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
