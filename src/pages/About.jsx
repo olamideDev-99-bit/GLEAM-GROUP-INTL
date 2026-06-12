@@ -60,7 +60,7 @@ const About = () => {
             position: "Assistant Team Lead Manager",
             description: `Rachael Osikoya is a dynamic Hospitality and Administrative Professional specializing in executive support, stakeholder management, and team development. As an Assistant Team Leader, she drives operational efficiency by coordinating priorities, supporting leadership, and developing high-performing teams. Recognized for her professionalism, strategic thinking, and commitment to service excellence, she consistently delivers exceptional value to clients, stakeholders, and organizations.`,
             image: AssistantTL,
-            linkedin: "#",
+            linkedin: "https://www.linkedin.com/in/rachaelosikoya22?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
             email: "rachaelosikoya@gmail.com"
         },
     ];
