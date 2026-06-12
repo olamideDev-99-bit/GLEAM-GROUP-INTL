@@ -25,23 +25,25 @@ const App = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      {loading ? (
-        <SplashScreen />
-      ) : (
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/products" element={<Product />} />
-              <Route path="/gears" element={<Gears />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      )}
+      <div className="flex flex-col min-h-screen">
+        {loading ? (
+          <SplashScreen />
+        ) : (
+          <>
+            <Header />
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/products" element={<Product />} />
+                <Route path="/gears" element={<Gears />} />
+              </Routes>
+            </main>
+            <Footer />
+          </>
+        )}
+      </div>
     </BrowserRouter>
   )
 }
