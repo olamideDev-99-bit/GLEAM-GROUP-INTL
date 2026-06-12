@@ -202,8 +202,8 @@ const About = () => {
                                     <div className="absolute inset-0 bg-linear-to-t from-[#0c6478]/80 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold text-[#0c6478] mb-1">{member.name}</h3>
-                                    <p className="text-[#0BD0C7] font-semibold text-sm mb-3">{member.position}</p>
+                                    <h3 className="text-xl font-bold text-[#0c6478] mb-1 uppercase">{member.name}</h3>
+                                    <p className="text-[#0BD0C7] font-semibold text-sm mb-3 capitalize">{member.position}</p>
                                     <p className="text-gray-600 text-sm leading-relaxed mb-4">
                                         {truncateText(member.description, 40)}
                                         {member.description.split(' ').length > 40 && (
@@ -299,8 +299,8 @@ const About = () => {
                                 className="w-full md:w-48 aspect-square md:aspect-auto md:h-48 rounded-xl object-cover object-top shadow-md" 
                             />
                             <div className="flex-1">
-                                <h3 className="text-2xl font-bold text-[#0c6478] mb-1">{selectedMember.name}</h3>
-                                <p className="text-[#0BD0C7] font-semibold mb-4">{selectedMember.position}</p>
+                                <h3 className="text-2xl font-bold text-[#0c6478] mb-1 uppercase">{selectedMember.name}</h3>
+                                <p className="text-[#0BD0C7] font-semibold mb-4 capitalize">{selectedMember.position}</p>
                                 <p className="text-gray-700 leading-relaxed text-sm md:text-base">
                                     {selectedMember.description}
                                 </p>
