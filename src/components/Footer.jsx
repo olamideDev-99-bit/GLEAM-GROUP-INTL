@@ -6,14 +6,11 @@ const Footer = () => {
         { name: 'Home', path: '/' },
         { name: 'About Us', path: '/about' },
         { name: 'Services', path: '/services' },
-        { name: 'Gears', path: '/gears' },
-        { name: 'The Akademy', path: '/akademy' },
-        { name: 'Products', path: '/products' },
     ];
 
     const legalLinks = [
-        { name: 'Terms & Conditions', path: '/terms' },
-        { name: 'Privacy Policy', path: '/privacy' },
+        { name: 'Terms & Conditions', path: '#' },
+        { name: 'Privacy Policy', path: '#' },
     ];
 
     return (
@@ -110,15 +107,6 @@ const Footer = () => {
 
                         {/* Social Icons */}
                         <div className="flex justify-center space-x-4 mt-6">
-                            {/* <a
-                                href="https://linkedin.com/company/yourcompany"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-white/10 p-2 rounded-full hover:bg-[#0BD0C7] transition-all duration-300 hover:scale-110"
-                                aria-label="LinkedIn"
-                            >
-                                <FaLinkedin className="w-5 h-5" />
-                            </a> */}
                             <a
                                 href="https://x.com/Gleamgroupint"
                                 target="_blank"

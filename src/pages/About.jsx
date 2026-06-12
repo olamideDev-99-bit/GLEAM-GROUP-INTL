@@ -309,9 +309,6 @@ const About = () => {
                                     <a href={selectedMember.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0BD0C7] transition-colors">
                                         <FaLinkedin className="w-6 h-6" />
                                     </a>
-                                    <a href={selectedMember.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0BD0C7] transition-colors">
-                                        <FaTwitter className="w-6 h-6" />
-                                    </a>
                                     <a href={selectedMember.email} className="text-gray-400 hover:text-[#0BD0C7] transition-colors">
                                         <FaEnvelope className="w-6 h-6" />
                                     </a>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaTwitter } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Header = () => {
@@ -27,8 +27,8 @@ const Header = () => {
         { name: 'Home', path: '/' },
         { name: 'About Us', path: '/about' },
         { name: 'Services', path: '/services' },
-        { 
-            name: 'More', 
+        {
+            name: 'More',
             path: '#',
             children: [
                 { name: 'Events', path: '/events' },
@@ -110,22 +110,22 @@ const Header = () => {
                     <div className="hidden lg:flex items-center space-x-4">
                         {/* Social Media Icons */}
                         <a
-                            href="https://instagram.com/yourusername"
+                            href="https://x.com/Gleamgroupint"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-[#0BD0C7] transition-all duration-300 hover:scale-110"
+                            className="bg-white/10 p-2 rounded-full hover:bg-[#0BD0C7] transition-all duration-300 hover:scale-110"
+                            aria-label="Twitter"
+                        >
+                            <FaTwitter className="w-5 h-5" />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/gleam_groupint?igsh=OG5oY2FmNTRnMnhx&utm_source=qr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white/10 p-2 rounded-full hover:bg-[#0BD0C7] transition-all duration-300 hover:scale-110"
                             aria-label="Instagram"
                         >
                             <FaInstagram className="w-5 h-5" />
-                        </a>
-                        <a
-                            href="https://x.com/yourusername"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-[#0BD0C7] transition-all duration-300 hover:scale-110"
-                            aria-label="X (Twitter)"
-                        >
-                            <FaXTwitter className="w-5 h-5" />
                         </a>
                     </div>
 
@@ -188,27 +188,27 @@ const Header = () => {
                                 </NavLink>
                             )
                         ))}
-                        
+
                         {/* Mobile Social Media Icons */}
                         <div className="px-4 pt-6 pb-4">
                             <div className="flex justify-center space-x-8">
                                 <a
-                                    href="https://instagram.com/yourusername"
+                                    href="https://x.com/Gleamgroupint"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-gray-600 hover:text-[#0BD0C7] transition-all duration-300 hover:scale-110"
-                                    aria-label="Instagram"
+                                    className="bg-white/10 p-2 rounded-full hover:bg-[#0BD0C7] transition-all duration-300 hover:scale-110"
+                                    aria-label="Twitter"
                                 >
-                                    <FaInstagram className="w-7 h-7" />
+                                    <FaTwitter className="w-5 h-5" />
                                 </a>
                                 <a
-                                    href="https://x.com/yourusername"
+                                    href="https://www.instagram.com/gleam_groupint?igsh=OG5oY2FmNTRnMnhx&utm_source=qr"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-gray-600 hover:text-[#0BD0C7] transition-all duration-300 hover:scale-110"
-                                    aria-label="X (Twitter)"
+                                    className="bg-white/10 p-2 rounded-full hover:bg-[#0BD0C7] transition-all duration-300 hover:scale-110"
+                                    aria-label="Instagram"
                                 >
-                                    <FaXTwitter className="w-7 h-7" />
+                                    <FaInstagram className="w-5 h-5" />
                                 </a>
                             </div>
                         </div>
