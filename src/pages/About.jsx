@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight, FaUsers, FaLightbulb, FaChartLine, FaRocket, FaLinkedin, FaTwitter, FaEnvelope, FaGem } from 'react-icons/fa';
+import ContactModal from '../components/ContactModal';
 import { AssistantTL, CeativeDirector, group, HR, ProjectManager, StrategicManager, TL } from '../assets/images';
 
 const About = () => {
     const [selectedMember, setSelectedMember] = useState(null);
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
     const truncateText = (text, wordLimit = 30) => {
         const words = text.split(' ');
@@ -266,12 +268,12 @@ const About = () => {
                     <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-600">
                         Let's bring your brand vision to life with strategy, creativity, and purpose.
                     </p>
-                    <Link
-                        to="/discovery-call"
-                        className="inline-block bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    <button
+                        onClick={() => setIsContactModalOpen(true)}
+                        className="inline-block bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
                     >
                         Book a Discovery Call
-                    </Link>
+                    </button>
                 </div>
             </section>
 
@@ -317,6 +319,7 @@ const About = () => {
                     </div>
                 </div>
             )}
+            <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
         </div>
     );
 };

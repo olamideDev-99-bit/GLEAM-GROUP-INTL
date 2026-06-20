@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ContactModal from '../components/ContactModal';
 import {
     FaArrowRight,
     FaChartLine,
@@ -13,12 +15,14 @@ import {
 import { CeativeDirector, group, HR, StrategicManager } from '../assets/images';
 
 const Services = () => {
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
     const services = [
         {
             id: "strategy",
-            title: "TKGN STRATEGY",
+            title: "GLEAM GROUP STRATEGY",
             subtitle: "Lead with Strategy",
-            description: "Everything starts with clarity. TKGN Strategy works with founders, marketing teams, and growing businesses to develop clear brand positioning, launch plans, and marketing strategy that fuels long-term growth.",
+            description: "Everything starts with clarity. GLEAM GROUP Strategy works with founders, marketing teams, and growing businesses to develop clear brand positioning, launch plans, and marketing strategy that fuels long-term growth.",
             icon: FaChartLine,
             bgColor: "from-[#0c6478] to-[#0BD0C7]",
             image: StrategicManager,
@@ -37,9 +41,9 @@ const Services = () => {
         },
         {
             id: "brands",
-            title: "TKGN BRANDS",
+            title: "GLEAM GROUP BRANDS",
             subtitle: "Build a Consistent Digital Presence",
-            description: "TKGN Brands manages your day-to-day digital identity. From social media platforms to personal brands, we help you stay visible, structured, and relevant — all while growing your audience and aligning with your business goals.",
+            description: "GLEAM GROUP Brands manages your day-to-day digital identity. From social media platforms to personal brands, we help you stay visible, structured, and relevant — all while growing your audience and aligning with your business goals.",
             icon: FaInstagram,
             bgColor: "from-[#0BD0C7] to-[#0c6478]",
             image: CeativeDirector,
@@ -58,9 +62,9 @@ const Services = () => {
         },
         {
             id: "studios",
-            title: "TKGN STUDIOS",
+            title: "GLEAM GROUP STUDIOS",
             subtitle: "Create Content That Moves People",
-            description: "TKGN Studios is our in-house production team that creates visual content for brands that want to show up with clarity, professionalism, and relevance. We shoot in Abuja and Lagos, delivering digital-first visuals that fuel social media campaigns and product launches.",
+            description: "GLEAM GROUP Studios is our in-house production team that creates visual content for brands that want to show up with clarity, professionalism, and relevance. We shoot in Abuja and Lagos, delivering digital-first visuals that fuel social media campaigns and product launches.",
             icon: FaVideo,
             bgColor: "from-[#0c6478] to-[#0BD0C7]",
             image: HR,
@@ -75,13 +79,13 @@ const Services = () => {
                 "Post-Production and Color Grading"
             ],
             ctaText: "Learn More About Our Studio",
-            ctaLink: "https://www.tkgnstudios.com"
+            ctaLink: "https://www.GLEAM GROUPstudios.com"
         },
         {
-            id: "akademy",
-            title: "THE AKADEMY",
+            id: "GLEAM GROUP",
+            title: "THE GLEAM GROUP",
             subtitle: "Learn the Skills. Launch the Career.",
-            description: "The Akademy is our learning hub for digital creatives, brand managers, and entrepreneurs. Whether you're managing your own platforms or growing your creative career, our on-demand courses give you the skills and confidence to succeed.",
+            description: "The GLEAM GROUP is our learning hub for digital creatives, brand managers, and entrepreneurs. Whether you're managing your own platforms or growing your creative career, our on-demand courses give you the skills and confidence to succeed.",
             icon: FaGraduationCap,
             bgColor: "from-[#0BD0C7] to-[#0c6478]",
             image: group,
@@ -95,8 +99,8 @@ const Services = () => {
                 "Analytics and Insights",
                 "Portfolio Building"
             ],
-            ctaText: "Go to The Akademy",
-            ctaLink: "/akademy"
+            ctaText: "Go to The GLEAM GROUP",
+            ctaLink: "/GLEAM GROUP"
         }
     ];
 
@@ -236,13 +240,13 @@ const Services = () => {
                                 ))}
                             </div>
                             <div className="mt-8">
-                                <Link
-                                    to="/discovery-call"
-                                    className="inline-flex items-center space-x-2 bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                                <button
+                                    onClick={() => setIsContactModalOpen(true)}
+                                    className="inline-flex items-center space-x-2 bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
                                 >
                                     <span>Book a Consultation Call</span>
                                     <FaArrowRight />
-                                </Link>
+                                </button>
                             </div>
                         </div>
                         <div>
@@ -270,21 +274,22 @@ const Services = () => {
                         Let's work together to bring your brand vision to life with strategy, creativity, and purpose.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link
-                            to="/discovery-call"
-                            className="inline-block bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                        <button
+                            onClick={() => setIsContactModalOpen(true)}
+                            className="inline-block bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
                         >
                             Book a Discovery Call
-                        </Link>
+                        </button>
                         <Link
-                            to="/akademy"
+                            to="/GLEAM GROUP"
                             className="inline-block border-2 border-[#0BD0C7] text-[#0BD0C7] px-8 py-3 rounded-full font-semibold hover:bg-[#0BD0C7] hover:text-white transition-all duration-300"
                         >
-                            Explore The Akademy
+                            Explore The GLEAM GROUP
                         </Link>
                     </div>
                 </div>
             </section>
+            <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
         </div>
     );
 };

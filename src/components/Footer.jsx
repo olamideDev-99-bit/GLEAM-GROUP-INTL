@@ -42,8 +42,8 @@ const Footer = () => {
                             <div className="flex items-start space-x-3 group">
                                 <FaMapMarkerAlt className="text-[#0BD0C7] mt-1 group-hover:scale-110 transition-transform" />
                                 <p className="text-sm leading-relaxed">
-                                    5 Idowu martins street<br />
-                                    vi Lagos. Nigeria
+                                    5 Idowu Martins Street<br />
+                                    VI Lagos, Nigeria.
                                 </p>
                             </div>
                         </div>

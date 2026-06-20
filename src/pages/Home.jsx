@@ -1,9 +1,13 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ContactModal from '../components/ContactModal';
 import { FaArrowRight, FaClock, FaChartLine, FaUsers, FaLightbulb, FaVideo, FaChalkboardTeacher, FaCube } from 'react-icons/fa';
 import { group } from '../assets/images';
 import { FaGroupArrowsRotate } from 'react-icons/fa6';
 
 const Home = () => {
+    const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
     // What We Offer data
     const offerings = [
         {
@@ -106,15 +110,15 @@ const Home = () => {
                             <span className="text-[#0BD0C7]">Empowering African Brands</span>
                         </h1>
                         <p className="text-lg md:text-xl mb-8">
-                            Looking for a creative and digital partner to take your brand to new heights?
+                            Looking for a creative and digital partner to take your brand to new heights ? 
                             GLEAM GROUP is here to help.
                         </p>
-                        <Link
-                            to="/discovery-call"
-                            className="inline-block bg-white text-[#0c6478] px-8 py-3 rounded-full font-semibold hover:bg-[#0BD0C7] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
+                        <button
+                            onClick={() => setIsContactModalOpen(true)}
+                            className="inline-block bg-white text-[#0c6478] px-8 py-3 rounded-full font-semibold hover:bg-[#0BD0C7] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
                         >
                             Book a Discovery Call →
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -323,12 +327,12 @@ const Home = () => {
                             <p className="text-lg font-semibold mb-8">
                                 Let's build something remarkable.
                             </p>
-                            <Link
-                                to="/"
-                                className="inline-block bg-white text-[#0c6478] px-8 py-3 rounded-full font-semibold hover:bg-[#0BD0C7] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
+                            <button
+                                onClick={() => setIsContactModalOpen(true)}
+                                className="inline-block bg-white text-[#0c6478] px-8 py-3 rounded-full font-semibold hover:bg-[#0BD0C7] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
                             >
                                 Schedule a Discovery Session →
-                            </Link>
+                            </button>
                         </div>
                         <div>
                             <img
@@ -356,14 +360,15 @@ const Home = () => {
                     <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-600">
                         Let's build something remarkable together.
                     </p>
-                    <Link
-                        to=""
-                        className="inline-block bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    <button
+                        onClick={() => setIsContactModalOpen(true)}
+                        className="inline-block bg-[#0BD0C7] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#0c6478] transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer"
                     >
                         Start the Conversation
-                    </Link>
+                    </button>
                 </div>
             </section>
+            <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
         </div>
     );
 };
