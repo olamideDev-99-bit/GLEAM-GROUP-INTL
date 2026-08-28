@@ -1,10 +1,11 @@
-import HR from './HR.JPG';
+import HR from './Ik.png';
 import AssistantTL from "./AssistantTL.jpeg";
-import StrategicManager from "./StrategicManager.JPG";
-import ProjectManager from "./ProjectManager.jpeg";
-import CeativeDirector from "./CeativeDirector.JPG";
+import StrategicManager from "./oka.png";
+import ProjectManager from "./Okaty.png";
+import CeativeDirector from "./ola.png";
 import TL from "./TLL.JPG";
-import group from "./group.jpeg"
+import group from "./bg2.png"
+import lol from "./lol.png"
 
 export {
     HR,
@@ -13,5 +14,6 @@ export {
     ProjectManager,
     CeativeDirector,
     TL,
-    group
+    group,
+    lol
 };

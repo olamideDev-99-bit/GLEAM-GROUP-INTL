@@ -57,14 +57,14 @@ const About = () => {
             linkedin: "https://www.linkedin.com/in/franca-imene-62a201318?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
             email: "Francaimene@gmail.com"
         },
-        {
-            name: "Rachael Osikoya",
-            position: "Assistant Team Lead Manager",
-            description: `Rachael Osikoya is a dynamic Hospitality and Administrative Professional specializing in executive support, stakeholder management, and team development. As an Assistant Team Leader, she drives operational efficiency by coordinating priorities, supporting leadership, and developing high-performing teams. Recognized for her professionalism, strategic thinking, and commitment to service excellence, she consistently delivers exceptional value to clients, stakeholders, and organizations.`,
-            image: AssistantTL,
-            linkedin: "https://www.linkedin.com/in/rachaelosikoya22?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-            email: "rachaelosikoya@gmail.com"
-        },
+        // {
+        //     name: "Rachael Osikoya",
+        //     position: "Assistant Team Lead Manager",
+        //     description: `Rachael Osikoya is a dynamic Hospitality and Administrative Professional specializing in executive support, stakeholder management, and team development. As an Assistant Team Leader, she drives operational efficiency by coordinating priorities, supporting leadership, and developing high-performing teams. Recognized for her professionalism, strategic thinking, and commitment to service excellence, she consistently delivers exceptional value to clients, stakeholders, and organizations.`,
+        //     image: AssistantTL,
+        //     linkedin: "https://www.linkedin.com/in/rachaelosikoya22?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        //     email: "rachaelosikoya@gmail.com"
+        // },
     ];
 
     const values = [
@@ -94,12 +94,12 @@ const About = () => {
         <div className="pt-20">
             {/* Hero Section */}
             <section
-                className="relative text-white py-20 bg-cover bg-center bg-no-repeat h-[80vh] flex items-center "
+                className="relative text-white py-12 md:py-20 bg-cover bg-top bg-no-repeat min-h-[60vh] md:min-h-screen flex items-center "
                 style={{
                     backgroundImage: `url(${group})`,
                 }}
             >
-                <div className="absolute inset-0 bg-linear-to-r from-[rgba(0,0,0,0.85)] to-[rgba(0,0,0,0.85)]"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.8)]"></div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                     <div className="text-center">
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">

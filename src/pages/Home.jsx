@@ -97,19 +97,19 @@ const Home = () => {
         <div className="pt-20">
             {/* Hero Section */}
             <section
-                className="relative text-white py-12 md:py-20 bg-cover bg-center bg-no-repeat min-h-[60vh] md:min-h-[80vh] flex items-center"
+                className="relative text-white py-12 md:py-20 bg-cover bg-top bg-no-repeat min-h-[60vh] md:min-h-screen flex items-center"
                 style={{
                     backgroundImage: `url(${group})`,
                 }}
             >
-                <div className="absolute inset-0 bg-linear-to-r from-[rgba(0,0,0,0.85)] to-[rgba(0,0,0,0.85)]"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.8)]"></div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
                     <div className="text-center">
                         <h1 className="text-4xl md:text-6xl font-bold mb-6">
                             GLEAM GROUP: <br />
                             <span className="text-[#0BD0C7]">Empowering African Brands</span>
                         </h1>
-                        <p className="text-lg md:text-xl mb-8">
+                        <p className="text-lg md:text-xl mb-8 hidden md:block">
                             Looking for a creative and digital partner to take your brand to new heights ? 
                             GLEAM GROUP is here to help.
                         </p>
