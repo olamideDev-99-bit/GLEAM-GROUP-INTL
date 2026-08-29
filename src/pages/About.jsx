@@ -19,7 +19,7 @@ const About = () => {
     const teamMembers = [
         {
             name: "OLAMIDE ADEJARE",
-            position: "Ceative director",
+            position: "Creative director",
             description: `OLAMIDE leads the creative vision and brand expression for Gleam Group Intl, shaping how hospitality brands look, feel, and connect with their audiences. He specializes in translating business strategy into compelling visual narratives, immersive brand systems, and design languages that resonate with guests and drive commercial value. His creative philosophy centers on clarity, emotion, and distinction. By aligning design with purpose, he ensures every touchpoint, from digital presence to physical space, communicates a brand’s story with intention and leaves a lasting impression. At Gleam, OLAMIDE bridges aesthetics and strategy, turning abstract ideas into tangible brand assets that elevate perception and performance. He works closely with clients to craft identities that are not only beautiful, but functional, scalable, and rooted in the realities of hospitality operations. For him, great design in hospitality is more than decoration. It is direction, differentiation, and the silent language that makes guests feel something before a word is spoken.`,
             image: CeativeDirector,
             linkedin: "https://www.linkedin.com/in/olamide-adejare-3a74bb332?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
