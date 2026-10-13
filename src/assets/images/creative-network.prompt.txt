@@ -1,0 +1,10 @@
+Use case: photorealistic-natural
+Asset type: landscape website image for the Our Creative Network section of a hospitality branding company.
+Primary request: a candid, high-quality editorial photograph of a diverse creative team collaborating on hospitality branding in a tasteful modern creative studio.
+Scene/backdrop: warm airy office with a wooden shared work table, large windows, subtle plants and creative materials.
+Subject: five adult colleagues with a balanced mix of Black and white people, men and women, engaged naturally in conversation and reviewing designs; realistic faces, hands and posture, relaxed professional clothing.
+Style/medium: natural photographic color, realistic textures, genuine candid lifestyle photography.
+Composition/framing: approximately 3:2 landscape; medium-wide scene with the whole small team and the design work visible, suitable for a website feature photo.
+Lighting/mood: warm natural daylight, welcoming and collaborative.
+Screen content: visible laptop and desktop screens show hospitality website design layouts and visual mood boards using hotel interiors, restaurant photography, typography samples and color swatches. They must not display charts, graphs, tables of metrics, dashboards or any data visualizations.
+Constraints: no recognizable real-person identities; no watermark, no brand logos or large overlaid text. Keep people and hands anatomically realistic. No charts or graph graphics anywhere in the image.

@@ -71,7 +71,7 @@ const Services = () => {
     {
       id: "studios",
       title: "GLEAM GROUP STUDIOS",
-      subtitle: "Create Content That Moves People",
+      subtitle: "Creates Content That Moves People",
       description:
         "GLEAM GROUP Studios is our in-house production team that creates visual content for brands that want to show up with clarity, professionalism, and relevance. We shoot in Abuja and Lagos, delivering digital-first visuals that fuel social media campaigns and product launches.",
       icon: FaVideo,

@@ -6,6 +6,8 @@ import CeativeDirector from "./ola.png";
 import TL from "./TLL.JPG";
 import group from "./bg2.png"
 import lol from "./lol.png"
+import sad from "./sad.PNG"
+import creativeNetwork from "./creative-network.png"
 
 export {
     HR,
@@ -15,5 +17,7 @@ export {
     CeativeDirector,
     TL,
     group,
-    lol
+    lol,
+    sad,
+    creativeNetwork
 };

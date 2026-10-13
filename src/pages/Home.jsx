@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ContactModal from '../components/ContactModal';
 import { FaArrowRight, FaClock, FaChartLine, FaUsers, FaLightbulb, FaVideo, FaChalkboardTeacher, FaCube } from 'react-icons/fa';
-import { group } from '../assets/images';
+import { creativeNetwork, group } from '../assets/images';
 import { FaGroupArrowsRotate } from 'react-icons/fa6';
 
 const Home = () => {
@@ -32,13 +32,11 @@ const Home = () => {
         }
     ];
 
-    // Services/Pricing data
+    // Services data
     const services = [
         {
             title: "Discovery Call",
             duration: "25 min",
-            price: "Free",
-            priceLabel: "Free",
             buttonText: "Book Now",
             link: "/book/discovery-call",
             image: "https://i.pinimg.com/736x/0d/d8/67/0dd8679d83fbfa635ec96b9d019ed95d.jpg"
@@ -46,7 +44,6 @@ const Home = () => {
         {
             title: "1-on-1 SMM Mentorship",
             duration: "1 hr",
-            price: "₦50,000",
             buttonText: "Request to Book",
             link: "/book/mentorship",
             image: "https://i.pinimg.com/1200x/87/7a/2f/877a2f42ff08e2536d7c29c71036db85.jpg"
@@ -54,7 +51,6 @@ const Home = () => {
         {
             title: "Brand Growth & Development",
             duration: "1 hr 30 min",
-            price: "₦40,000",
             buttonText: "Request to Book",
             link: "/book/brand-consultation",
             image: "https://i.pinimg.com/736x/7e/6f/e3/7e6fe3488b60391e6c9f8b3d7ba382f9.jpg"
@@ -62,7 +58,6 @@ const Home = () => {
         {
             title: "Social/Digital Strategy",
             duration: "1 hr 20 min",
-            price: "₦20,000",
             buttonText: "Request to Book",
             link: "/book/strategy",
             image: "https://i.pinimg.com/1200x/df/81/ff/df81ff756d7b232bf5e54a82e9fb3243.jpg"
@@ -70,7 +65,6 @@ const Home = () => {
         {
             title: "Marketing & Performance",
             duration: "2 hr",
-            price: "₦40,000",
             buttonText: "Request to Book",
             link: "/book/marketing",
             image: "https://i.pinimg.com/736x/fd/51/50/fd515007f2f92de868516ea503897c91.jpg"
@@ -78,7 +72,6 @@ const Home = () => {
         {
             title: "Personalized Training Workshop",
             duration: "4 hr",
-            price: "₦250,000",
             buttonText: "Request to Book",
             link: "/book/training",
             image: "https://i.pinimg.com/736x/9d/e4/1d/9de41d6e269715f2d8355c7e192bf744.jpg"
@@ -142,7 +135,7 @@ const Home = () => {
                                 In a world saturated with choices, attention is fleeting and loyalty is earned.
                             </p>
                             <p className="text-gray-600 mb-2">
-                                Gleam helps hospitality businesses transcend transactions and create experiences that resonate long after the visit ends. Through strategic insight, elevated creative execution, and operational refinement, we help brands become more visible, more desirable, and more unforgettable.
+                                Gleam helps hospitality businesses transcend transactions and create experiences that resonate long after the visit ends. Our work combines strategic insight, elevated creative execution, and operational refinement. We help brands become more visible, more desirable, and more unforgettable.
                             </p>
                             <p className="text-gray-600 mb-2">
                                 We don't chase trends. We build systems that last. Because excellence isn't a moment it's the standard.
@@ -193,8 +186,8 @@ const Home = () => {
                         </div>
                         <div>
                             <img
-                                src="https://i.pinimg.com/1200x/fd/eb/05/fdeb05d593ba1a0d490a3b2a950204a8.jpg"
-                                alt="Creative Network Team"
+                                src={creativeNetwork}
+                                alt="Black and white hospitality creatives collaborating on brand mood boards and creative layouts"
                                 className="rounded-2xl shadow-xl w-full"
                             />
                         </div>
@@ -267,12 +260,12 @@ const Home = () => {
 
   
 
-            {/* Services/Pricing Section */}
+            {/* Services Section */}
             <section className="py-12 md:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-                            Our Services & Pricing
+                            Our Services
                         </h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             Choose the perfect package for your needs. All consultations are tailored to your specific goals.
@@ -292,7 +285,6 @@ const Home = () => {
                                     <FaClock className="text-[#0BD0C7]" />
                                     <span>{service.duration}</span>
                                 </div>
-                                <p className="text-2xl font-bold text-[#0c6478] mb-4">{service.price}</p>
                                 <Link
                                     to={service.link}
                                     className="block text-center bg-[#0BD0C7] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#0c6478] transition-colors"

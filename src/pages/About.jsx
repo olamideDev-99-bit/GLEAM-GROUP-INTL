@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight, FaUsers, FaLightbulb, FaChartLine, FaRocket, FaLinkedin, FaTwitter, FaEnvelope, FaGem } from 'react-icons/fa';
 import ContactModal from '../components/ContactModal';
-import { AssistantTL, CeativeDirector, group, HR, ProjectManager, StrategicManager, TL } from '../assets/images';
+import { AssistantTL, CeativeDirector, group, HR, ProjectManager, sad, StrategicManager, TL } from '../assets/images';
 
 const About = () => {
     const [selectedMember, setSelectedMember] = useState(null);
@@ -18,9 +18,9 @@ const About = () => {
 
     const teamMembers = [
         {
-            name: "OLAMIDE ADEJARE",
+            name: "Olamide Adejare",
             position: "Creative director",
-            description: `OLAMIDE leads the creative vision and brand expression for Gleam Group Intl, shaping how hospitality brands look, feel, and connect with their audiences. He specializes in translating business strategy into compelling visual narratives, immersive brand systems, and design languages that resonate with guests and drive commercial value. His creative philosophy centers on clarity, emotion, and distinction. By aligning design with purpose, he ensures every touchpoint, from digital presence to physical space, communicates a brand’s story with intention and leaves a lasting impression. At Gleam, OLAMIDE bridges aesthetics and strategy, turning abstract ideas into tangible brand assets that elevate perception and performance. He works closely with clients to craft identities that are not only beautiful, but functional, scalable, and rooted in the realities of hospitality operations. For him, great design in hospitality is more than decoration. It is direction, differentiation, and the silent language that makes guests feel something before a word is spoken.`,
+            description: `Olamide leads the creative vision and brand expression for Gleam Group Int’l, shaping how hospitality brands look, feel, and connect with their audiences. He specializes in translating business strategy into compelling visual narratives, immersive brand systems, and design languages that resonate with guests and drive commercial value. His creative philosophy centers on clarity, emotion, and distinction. By aligning design with purpose, he ensures every touchpoint, from digital platforms to physical spaces, communicates a brand’s story with intention and leaves a lasting impression. At Gleam, Olamide bridges aesthetics and strategy, turning abstract ideas into tangible brand assets that elevate perception and performance. He works closely with clients to craft identities that are not only beautiful but functional, scalable, and rooted in the realities of hospitality operations. For him, great design in hospitality is more than decoration. It is direction, differentiation, and the silent language that makes guests feel something before a word is spoken.`,
             image: CeativeDirector,
             linkedin: "https://www.linkedin.com/in/olamide-adejare-3a74bb332?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
             email: "Info@olamideofficial.com"
@@ -28,8 +28,8 @@ const About = () => {
         {
             name: "ISIEKWENE SANDRA NKEM ",
             position: "Team Lead manager",
-            description: `Leads hospitality teams within GLEAM-GROUP, ensuring service excellence is clearly defined and consistently delivered across every guest interaction. She operates at the intersection of people and performance guiding teams with clarity, discipline, and alignment to translate hospitality standards into seamless, intentional guest experiences. Within GLEAM, she contributes to strengthening service culture across client establishments, improving operational flow, and ensuring teams are structured for consistency and excellence in delivery. Her approach is driven by a genuine love for hospitality the energy of service, the precision of execution, and the fulfillment of a well crafted guest experience. For her, leading teams is not only responsibility but a meaningful expression of structure, people, and shared excellence. As part of GLEAM’s collective of hospitality specialists, she helps bridge strategy and execution, turning ideas into measurable impact across hospitality brands. For her, hospitality is not just service it is experience, designed and delivered with intention.`,
-            image: TL,
+            description: `Leads hospitality teams within GLEAM-GROUP, ensuring service excellence is clearly defined and consistently delivered across every guest interaction. She operates at the intersection of people and performance, guiding teams with clarity, discipline, and alignment to translate hospitality standards into seamless, intentional guest experiences. Within GLEAM, she contributes to strengthening service culture across client establishments, improving operational flow, and ensuring teams are structured for consistency and excellence in delivery. Her approach is driven by a genuine love for hospitality: the energy of service, the precision of execution, and the fulfillment of a well crafted guest experience. For her, leading teams is not only a responsibility but a meaningful expression of structure, people, and shared excellence. As part of GLEAM’s collective of hospitality specialists, she helps bridge strategy and execution, turning ideas into measurable impact across hospitality brands. For her, hospitality is not just service; it is experience, designed and delivered with intention.`,
+            image: sad,
             linkedin: "https://www.linkedin.com/in/isiekwene-sandra-09165a26b?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
             email: "Sandnkemtessy@gmail.com"
         },
@@ -44,15 +44,15 @@ const About = () => {
         {
             name: "Oladimeji Adams",
             position: "Project manager",
-            description: `Bridging Creativity and Strategy: My Journey as a Project Manager & Graphic Designer In today's fast-paced digital world, successful brands require more than beautiful visuals—they need strategic execution, effective leadership, and purposeful communication. My journey as both a Project Manager and Graphic Designer has allowed me to combine creativity with structure, ensuring that every project is delivered with excellence from concept to completion. As a graphic designer, I believe design is more than aesthetics; it is a powerful business tool that influences perception, builds trust, and drives engagement. Every visual element should communicate a clear message while creating memorable experiences for audiences. At the same time, my experience in project management has strengthened my ability to coordinate teams, manage timelines, optimize resources, and deliver projects that meet business objectives without compromising quality. I enjoy transforming ideas into actionable plans and ensuring that collaboration remains at the heart of every successful outcome.`,
+            description: `Oladimeji Adams combines project management and graphic design to connect creativity with strategic execution. He coordinates teams, manages timelines, and optimizes resources to deliver projects from concept to completion, ensuring that each outcome supports business objectives without compromising quality. His approach to design goes beyond aesthetics: he sees every visual element as an opportunity to communicate clearly, build trust, and create memorable experiences that engage audiences. By translating ideas into actionable plans, he brings structure and purpose to the creative process. Effective leadership, purposeful communication, and collaboration are central to his work, helping teams turn shared ideas into successful outcomes.`,
             image: ProjectManager,
             linkedin: "https://www.linkedin.com/in/oladimeji-adams-87077424b",
             email: "oladimejiadams9066@gmail.com"
         },
         {
             name: "Franca Imene Oghenevwaire",
-            position: "HR",
-            description: `Franca Imene Oghenevwaire is an HR professional with expertise in human resources, administration, internal control, and customer relations. She holds a bachelor's degree in library and information science and a master's degree in business administration. As HR Manager at GLEAM GROUP, she is dedicated to building strong workplace cultures, supporting team development, and implementing people-focused strategies that contribute to organizational success. Her passion for growth, collaboration, and continuous improvement drives her commitment to helping individuals and businesses reach their full potential.`,
+            position: "Human Resources",
+            description: `Franca Imene Oghenevwaire is a Human Resources professional with expertise in human resources, administration, internal control, and customer relations. She holds a bachelor's degree in library and information science and a master's degree in business administration. As Human Resources Manager at GLEAM GROUP, she is dedicated to building strong workplace cultures, supporting team development, and implementing people-focused strategies that contribute to organizational success. Her passion for growth, collaboration, and continuous improvement drives her commitment to helping individuals and businesses reach their full potential.`,
             image: HR,
             linkedin: "https://www.linkedin.com/in/franca-imene-62a201318?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
             email: "Francaimene@gmail.com"
@@ -189,7 +189,7 @@ const About = () => {
                     </h2>
                     <div className="w-24 h-1 bg-[#0BD0C7] mx-auto mb-12"></div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {teamMembers.map((member, index) => (
                             <div
                                 key={index}
