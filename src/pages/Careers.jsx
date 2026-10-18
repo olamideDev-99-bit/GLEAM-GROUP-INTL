@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaUser, FaPhoneAlt, FaEnvelope, FaArrowRight, FaCheckCircle } from 'react-icons/fa';
+import { FaUser, FaPhoneAlt, FaEnvelope, FaRegCommentDots, FaArrowRight, FaCheckCircle } from 'react-icons/fa';
 import API_BASE from '../lib/api';
 
 const Careers = () => {
-    const [form, setForm] = useState({ username: '', phone: '', email: '' });
+    const [form, setForm] = useState({ firstName: '', lastName: '', phone: '', email: '', note: '' });
     const [status, setStatus] = useState('idle'); // idle | submitting | success | error
     const [error, setError] = useState('');
 
@@ -30,7 +30,7 @@ const Careers = () => {
             }
 
             setStatus('success');
-            setForm({ username: '', phone: '', email: '' });
+            setForm({ firstName: '', lastName: '', phone: '', email: '', note: '' });
         } catch (err) {
             setStatus('error');
             setError(err.message || 'Could not reach the server. Please try again later.');
@@ -96,23 +96,44 @@ const Careers = () => {
                                 )}
 
                                 <form onSubmit={handleSubmit} className="space-y-5">
-                                    {/* Username */}
-                                    <div>
-                                        <label htmlFor="username" className="block text-sm font-semibold text-gray-700 mb-2">
-                                            Username
-                                        </label>
-                                        <div className="relative">
-                                            <FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                                            <input
-                                                id="username"
-                                                name="username"
-                                                type="text"
-                                                required
-                                                value={form.username}
-                                                onChange={handleChange}
-                                                placeholder="e.g. Jane Doe"
-                                                className="w-full pl-11 pr-4 py-3 rounded-lg border border-gray-300 focus:border-[#0BD0C7] focus:ring-2 focus:ring-[#0BD0C7]/30 outline-none transition"
-                                            />
+                                    {/* First & last name */}
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                        <div>
+                                            <label htmlFor="firstName" className="block text-sm font-semibold text-gray-700 mb-2">
+                                                First name
+                                            </label>
+                                            <div className="relative">
+                                                <FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                                                <input
+                                                    id="firstName"
+                                                    name="firstName"
+                                                    type="text"
+                                                    required
+                                                    value={form.firstName}
+                                                    onChange={handleChange}
+                                                    placeholder="e.g. Jane"
+                                                    className="w-full pl-11 pr-4 py-3 rounded-lg border border-gray-300 focus:border-[#0BD0C7] focus:ring-2 focus:ring-[#0BD0C7]/30 outline-none transition"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label htmlFor="lastName" className="block text-sm font-semibold text-gray-700 mb-2">
+                                                Last name
+                                            </label>
+                                            <div className="relative">
+                                                <FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+                                                <input
+                                                    id="lastName"
+                                                    name="lastName"
+                                                    type="text"
+                                                    required
+                                                    value={form.lastName}
+                                                    onChange={handleChange}
+                                                    placeholder="e.g. Doe"
+                                                    className="w-full pl-11 pr-4 py-3 rounded-lg border border-gray-300 focus:border-[#0BD0C7] focus:ring-2 focus:ring-[#0BD0C7]/30 outline-none transition"
+                                                />
+                                            </div>
                                         </div>
                                     </div>
 
@@ -152,6 +173,25 @@ const Careers = () => {
                                                 onChange={handleChange}
                                                 placeholder="e.g. jane@example.com"
                                                 className="w-full pl-11 pr-4 py-3 rounded-lg border border-gray-300 focus:border-[#0BD0C7] focus:ring-2 focus:ring-[#0BD0C7]/30 outline-none transition"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    {/* Note (optional) */}
+                                    <div>
+                                        <label htmlFor="note" className="block text-sm font-semibold text-gray-700 mb-2">
+                                            Note <span className="font-normal text-gray-400">(optional)</span>
+                                        </label>
+                                        <div className="relative">
+                                            <FaRegCommentDots className="absolute left-4 top-4 text-gray-400" />
+                                            <textarea
+                                                id="note"
+                                                name="note"
+                                                rows={4}
+                                                value={form.note}
+                                                onChange={handleChange}
+                                                placeholder="Tell us a little about yourself or why you'd like to join."
+                                                className="w-full pl-11 pr-4 py-3 rounded-lg border border-gray-300 focus:border-[#0BD0C7] focus:ring-2 focus:ring-[#0BD0C7]/30 outline-none transition resize-y"
                                             />
                                         </div>
                                     </div>

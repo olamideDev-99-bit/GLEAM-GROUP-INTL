@@ -109,7 +109,7 @@ const AdminDashboard = () => {
     };
 
     const remove = async (app) => {
-        if (!window.confirm(`Delete the application from "${app.username}"? This cannot be undone.`)) {
+        if (!window.confirm(`Delete the application from "${app.firstName} ${app.lastName}"? This cannot be undone.`)) {
             return;
         }
         try {
@@ -234,9 +234,10 @@ const AdminDashboard = () => {
                             <table className="w-full text-left">
                                 <thead className="bg-gray-50 text-gray-500 text-sm uppercase tracking-wide">
                                     <tr>
-                                        <th className="px-6 py-4 font-semibold">Username</th>
+                                        <th className="px-6 py-4 font-semibold">Name</th>
                                         <th className="px-6 py-4 font-semibold">Contact number</th>
                                         <th className="px-6 py-4 font-semibold">Email</th>
+                                        <th className="px-6 py-4 font-semibold">Note</th>
                                         <th className="px-6 py-4 font-semibold">Submitted</th>
                                         <th className="px-6 py-4 font-semibold">Status</th>
                                         <th className="px-6 py-4 font-semibold text-right">Actions</th>
@@ -245,12 +246,15 @@ const AdminDashboard = () => {
                                 <tbody className="divide-y divide-gray-100">
                                     {applications.map((app) => (
                                         <tr key={app._id} className="hover:bg-gray-50/70">
-                                            <td className="px-6 py-4 font-medium text-gray-900">{app.username}</td>
+                                            <td className="px-6 py-4 font-medium text-gray-900">{app.firstName} {app.lastName}</td>
                                             <td className="px-6 py-4 text-gray-700">
                                                 <a href={`tel:${app.phone}`} className="hover:text-[#0BD0C7]">{app.phone}</a>
                                             </td>
                                             <td className="px-6 py-4 text-gray-700">
                                                 <a href={`mailto:${app.email}`} className="hover:text-[#0BD0C7]">{app.email}</a>
+                                            </td>
+                                            <td className="px-6 py-4 text-gray-600 text-sm max-w-xs whitespace-pre-wrap break-words">
+                                                {app.note ? app.note : <span className="text-gray-300">—</span>}
                                             </td>
                                             <td className="px-6 py-4 text-gray-500 text-sm">{formatDate(app.createdAt)}</td>
                                             <td className="px-6 py-4">
@@ -286,7 +290,7 @@ const AdminDashboard = () => {
                             {applications.map((app) => (
                                 <div key={app._id} className="bg-white rounded-xl shadow-sm p-5">
                                     <div className="flex items-start justify-between">
-                                        <h3 className="font-bold text-gray-900">{app.username}</h3>
+                                        <h3 className="font-bold text-gray-900">{app.firstName} {app.lastName}</h3>
                                         <button
                                             onClick={() => toggleStatus(app)}
                                             className={`text-xs font-semibold px-3 py-1 rounded-full cursor-pointer ${
@@ -303,6 +307,10 @@ const AdminDashboard = () => {
                                             <a href={`tel:${app.phone}`} className="text-gray-700">{app.phone}</a></p>
                                         <p><span className="text-gray-400">Email: </span>
                                             <a href={`mailto:${app.email}`} className="text-gray-700 break-all">{app.email}</a></p>
+                                        {app.note && (
+                                            <p><span className="text-gray-400">Note: </span>
+                                                <span className="text-gray-700 whitespace-pre-wrap break-words">{app.note}</span></p>
+                                        )}
                                         <p className="text-gray-400 text-xs pt-1">{formatDate(app.createdAt)}</p>
                                     </div>
                                     <div className="mt-4 text-right">
