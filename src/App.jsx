@@ -7,6 +7,8 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Product from './pages/Product'
 import Gears from './pages/Gears'
+import Careers from './pages/Careers'
+import AdminDashboard from './pages/AdminDashboard'
 import SplashScreen from './components/SplashScreen'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -38,6 +40,8 @@ const App = () => {
                 <Route path="/services" element={<Services />} />
                 <Route path="/products" element={<Product />} />
                 <Route path="/gears" element={<Gears />} />
+                <Route path="/careers" element={<Careers />} />
+                <Route path="/admin" element={<AdminDashboard />} />
               </Routes>
             </main>
             <Footer />

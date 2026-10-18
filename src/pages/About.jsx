@@ -253,7 +253,7 @@ const About = () => {
                         to="/careers"
                         className="inline-flex items-center space-x-2 bg-white text-[#0c6478] px-8 py-3 rounded-full font-semibold hover:bg-[#0BD0C7] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
                     >
-                        <span>Apply to Join Us</span>
+                        <span>Join Us Now</span>
                         <FaArrowRight />
                     </Link>
                 </div>
